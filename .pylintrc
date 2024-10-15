@@ -1,0 +1,10 @@
+[MASTER]
+init-hook='import sys; sys.path.append("/path/to/your/venv/lib/python3.x/site-packages")'
+
+[FORMAT]
+max-line-length=120
+argument-naming-style=any
+
+[MESSAGES CONTROL]
+disable=
+    broad-exception-caught  # W0718

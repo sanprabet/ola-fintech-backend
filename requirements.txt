@@ -1,2 +1,10 @@
-fastapi
-uvicorn
+fastapi==0.110.1  # Latest stable version as of now
+uvicorn==0.27.1  # Keep this version for compatibility, but can be updated if needed
+motor>=3.3.2,<4.0.0  # Specify a range to allow future minor/patch updates
+pymongo>=4.6.2,<5.0.0  # Same as above, avoid major updates that might break functionality
+pydantic>=2.6.1,<3.0.0  # Allow future updates within the same major version
+pydantic-settings>=2.1.0,<3.0.0  # Same as above for pydantic-settings
+debugpy>=1.8.7,<2.0.0  # Latest version (no breaking changes within this range)
+pylint>=3.3.1,<4.0.0  # Allow for patch and minor updates
+twilio  # Specify a range to avoid major updates that might break compatibility
+sendgrid>=6.0.0,<7.0.0  # Compatible with ARM64/AMD64 platforms, avoid unstable `7.0.0` versions
